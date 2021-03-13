@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: rgb(255, 244, 209);
 }
 
 h1 {
@@ -17,12 +17,42 @@ h3 {
   font-family:Arial, Helvetica, sans-serif;
 }
 
-p {
+form {
   color: rgb(0, 0, 0);
   font-family:Arial, Helvetica, sans-serif;
 }
 
-form {
-  color: rgb(0, 0, 0);
+div.DivTop {
+  padding: 10px;
+  color: white;
   font-family:Arial, Helvetica, sans-serif;
+}
+
+div.DivCenter {
+  color: Blue;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+div.DivBot {
+  padding: 10px;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
